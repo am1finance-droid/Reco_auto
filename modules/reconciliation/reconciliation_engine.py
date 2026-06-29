@@ -115,10 +115,14 @@ def standardize_vendor_statement(
 
     return df
 
-def reconcile_amount(
-        books_df,
-        statement_df
-):
+    from modules.reconciliation.matcher import Matcher
+
+    matcher = Matcher()
+
+    matched_df = matcher.amount_match(
+    books_df,
+    standard_df
+    )
 
     books_df["amount"] = pd.to_numeric(
         books_df["amount"],

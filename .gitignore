@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment
+.env
+venv/
+.env.*
+
+# Streamlit
+.streamlit/
+
+# Logs
+logs/
+*.log
+
+# Uploads
+uploads/*
+!uploads/.gitkeep
+
+# Exports
+exports/*
+!exports/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
